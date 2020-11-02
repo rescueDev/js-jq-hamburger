@@ -7,15 +7,15 @@ var menuOpen = $(".fas.fa-bars");
 var menuClose = $(".fas.fa-times");
 var submenu = $(".hamburger-menu");
 
-//toggle show and hide
+//toggle show and hide menu
 menuOpen.click(clickShow);
 menuClose.click(clickHide);
 
-//FUNZIONI HIDE AND SHOW AL CLICK
+//FUNZIONI
 function clickShow() {
-  submenu.show();
+  submenu.addClass("active");
 }
 
 function clickHide() {
-  submenu.hide();
+  submenu.removeClass("active");
 }
